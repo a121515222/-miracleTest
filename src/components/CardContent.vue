@@ -3,7 +3,7 @@ div(class="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-0 md:gap-2 md:grid-cols-
   template(v-for='(i, index) in youTubeData', :key='i.title + index')
     a.flex.flex-col(href="#")
       .relative
-        img(:src='i.mainPicture', :alt='i.title + "picture"', class="object-cover w-full")
+        img(:src='i.mainPicture', :alt='i.title + "picture"', class="object-cover w-full aspect-video")
         span.absolute.bottom-1.right-1.text-white.rounded.bg-slate-800.text-xs.px-1 {{i.videoTime}}
       .flex.flex-row.gap-3.mt-3
         img.img.rounded-full.object-cover.w-36px.h-36px(v-if="i.subPicture !== ''", :src='i.subPicture', :alt='i.title + "picture"')

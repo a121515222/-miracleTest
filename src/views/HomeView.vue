@@ -14,7 +14,7 @@
 VideoClassButton(:you-tube-video-class-buttonData='videoClass')
 div(class="md:px-2")
   CardContent(:you-tube-data='demoData')
-.flex.flex-row.justify-between.mx-10
+.flex.flex-row.justify-between.mx-10.my-2
   button.flex.flex-col(type="button")
     i.bi.bi-house.self-center
     span Hone
@@ -44,7 +44,7 @@ export default {
           views: '81萬',
           time: '11年',
           videoTime: '03:54',
-          mainPicture: 'https://i.ytimg.com/vi/5XK2C9w6oVk/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCfkUcyjWEjRRrPYhr3MmSJDerKwA',
+          mainPicture: 'https://img.youtube.com/vi/5XK2C9w6oVk/0.jpg',
           subPicture: ''
         },
         {
@@ -53,7 +53,7 @@ export default {
           views: '4萬',
           time: '3個月',
           videoTime: '09:14',
-          mainPicture: 'https://i.ytimg.com/vi/_HvDo67R6Nk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBjdxgfuEWB_bChEbjOEqHvplOUtA',
+          mainPicture: 'https://img.youtube.com/vi/_HvDo67R6Nk/0.jpg',
           subPicture: 'https://yt3.ggpht.com/gFvVs22CqiCvk88u12j4E0rjRn48itY87hEiMR_czWlzvngO2AgOqlVxBU_9WAowTCpBZug-nA8=s68-c-k-c0x00ffffff-no-rj'
         },
         {
@@ -62,7 +62,7 @@ export default {
           views: '4.8萬',
           time: '1個月',
           videoTime: '06:55',
-          mainPicture: 'https://i.ytimg.com/an_webp/FDSMBq_Yl9o/mqdefault_6s.webp?du=3000&sqp=CPTy-5QG&rs=AOn4CLBFpRlrxQVyMBq_4mFzaKn_5ywX1Q',
+          mainPicture: 'https://img.youtube.com/vi/FDSMBq_Yl9o/0.jpg',
           subPicture: 'https://yt3.ggpht.com/ytc/AKedOLS4ypE2WWA0JEURB9wZHRJJHSO7AQzP37mSyVvrRQ=s68-c-k-c0x00ffffff-no-rj'
         },
         {
@@ -71,7 +71,7 @@ export default {
           views: '11萬',
           time: '1個月',
           videoTime: '07:33',
-          mainPicture: 'https://i.ytimg.com/an_webp/xEdlTsS5aOY/mqdefault_6s.webp?du=3000&sqp=CJr1-5QG&rs=AOn4CLByMfg_Iz1RgusN1LeRO0B5dBCR-w',
+          mainPicture: 'https://img.youtube.com/vi/xEdlTsS5aOY/0.jpg',
           subPicture: 'https://yt3.ggpht.com/ytc/AKedOLQy5RNdmpmFTLgIkJ3cDFze72nrn_XHw_g6rkqo=s68-c-k-c0x00ffffff-no-rj'
         },
         {
@@ -80,7 +80,7 @@ export default {
           views: '51萬',
           time: '7個月前',
           videoTime: '05:54',
-          mainPicture: 'https://i.ytimg.com/vi/Fa-s6v95jkA/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDdImDiejVt8NKeiU68_0M7iLb0fg',
+          mainPicture: 'https://img.youtube.com/vi/Fa-s6v95jkA/0.jpg',
           subPicture: 'https://yt3.ggpht.com/ytc/AKedOLREkv1Y6_vEamFC1xzyApLvy-lUfExP0CPMRLNkHA=s68-c-k-c0x00ffffff-no-rj'
         },
         {
@@ -89,8 +89,8 @@ export default {
           views: '10萬',
           time: '4天前',
           videoTime: '06:33',
-          mainPicture: 'https://i.ytimg.com/vi/iknKUZpV0as/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBW-AQv3YQZ8Fm_Di_INo11nuLGNw',
-          subPicture: 'https://i.ytimg.com/vi/5XK2C9w6oVk/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCfkUcyjWEjRRrPYhr3MmSJDerKwA'
+          mainPicture: 'https://img.youtube.com/vi/iknKUZpV0as/0.jpg',
+          subPicture: 'https://yt3.ggpht.com/ytc/AKedOLTOWKjZsa1qrByn3d-Zle2QRktk_eLkkiUXhQ2w=s68-c-k-c0x00ffffff-no-rj'
         },
         {
           title: '為什麼說進化的終點是螃蟹？原來，至少有5類史前蟲子進化成了螃蟹……|自說自話的總裁',
@@ -98,7 +98,7 @@ export default {
           views: '90萬',
           time: '9天',
           videoTime: '18:38',
-          mainPicture: 'https://i.ytimg.com/vi/Fu0gTUT_MHk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBJ8WeGn54_uFn--xWgMsKOUglLCw',
+          mainPicture: 'https://img.youtube.com/vi/Fu0gTUT_MHk/0.jpg',
           subPicture: 'https://yt3.ggpht.com/ytc/AKedOLRA2LQmvarS6RFp1C0FLwwaXVAcR40M2mOmjqRi=s68-c-k-c0x00ffffff-no-rj'
         },
         {
@@ -107,7 +107,7 @@ export default {
           views: '43萬',
           time: '3個月',
           videoTime: '15:33',
-          mainPicture: 'https://i.ytimg.com/an_webp/hqQWOK3olFg/mqdefault_6s.webp?du=3000&sqp=CLCU_JQG&rs=AOn4CLANOC4MxTtZVEfiJG6ydITebyojQQ',
+          mainPicture: 'https://img.youtube.com/vi/hqQWOK3olFg/0.jpg',
           subPicture: 'https://yt3.ggpht.com/ytc/AKedOLQ60K6bCXYGhvpdxQVHwXRHdi8T_YolbHRlH1y6kA=s88-c-k-c0x00ffffff-no-rj'
         },
         {
@@ -116,7 +116,7 @@ export default {
           views: '24萬',
           time: '6個月',
           videoTime: '05:57',
-          mainPicture: 'https://i.ytimg.com/vi/BxwK92i93OE/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBOvttqTMYuB38IJ6BsEScNfwhySw',
+          mainPicture: 'https://img.youtube.com/vi/BxwK92i93OE/0.jpg',
           subPicture: 'https://yt3.ggpht.com/S38wmgeZeDe6-tLbT7zD4a2UdrYjGIxNwmcHxfNo7j9taI7pugxoSqOyC4VUn_erqWOhs9TDUw=s68-c-k-c0x00ffffff-no-rj'
         },
         {
@@ -125,7 +125,7 @@ export default {
           views: '75億',
           time: '3年',
           videoTime: '04:23',
-          mainPicture: 'https://i.ytimg.com/vi/SX_ViT4Ra7k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAestIZGZJAKXf4vDcYRYvt5cNScQ',
+          mainPicture: 'https://img.youtube.com/vi/SX_ViT4Ra7k/0.jpg',
           subPicture: 'https://yt3.ggpht.com/obIiHrgUtL93lzpHG_pOPzseJv9ZEwGcLauBcqw9G-HB30qjiOe7uiVrA87WOO_4yCh-aQKxhsg=s88-c-k-c0x00ffffff-no-rj'
         },
         {
@@ -134,16 +134,16 @@ export default {
           views: '69萬',
           time: '5個月',
           videoTime: '08:41',
-          mainPicture: 'https://i.ytimg.com/vi/49zqp4wG5x0/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCMyOp7kaTjUfefvSXXFHBCALt9wg',
+          mainPicture: 'https://img.youtube.com/vi/49zqp4wG5x0/0.jpg',
           subPicture: 'https://yt3.ggpht.com/S38wmgeZeDe6-tLbT7zD4a2UdrYjGIxNwmcHxfNo7j9taI7pugxoSqOyC4VUn_erqWOhs9TDUw=s68-c-k-c0x00ffffff-no-rj'
         },
         {
-          title: '超乎你想像的「卡農」!! - 巴哈: 郭德堡變奏曲',
+          title: '深入解析，蕭邦為什麼這麼好聽',
           subTitle: '音樂家的無聊人生 Musician Seacow',
-          views: '63萬',
+          views: '69萬',
           time: '1年',
-          videoTime: '10:05',
-          mainPicture: 'https://i.ytimg.com/an_webp/_vbOhtwxfe0/mqdefault_6s.webp?du=3000&sqp=COWT_JQG&rs=AOn4CLCSO4BOTGtA8HLc4x9J8T5YvkhcQQ',
+          videoTime: '18:05',
+          mainPicture: 'https://img.youtube.com/vi/RcVyNE5L-zk/0.jpg',
           subPicture: 'https://yt3.ggpht.com/xNOBXH3Q_bWSYSxEoPyctfflc76qvMJ8UXA-GnF1rwlYlEfEt8XKdjZ93RQ-4gcU_qjhCGcMLQ=s68-c-k-c0x00ffffff-no-rj'
         }]
     }
