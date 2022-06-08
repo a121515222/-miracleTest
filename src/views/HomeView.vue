@@ -4,7 +4,8 @@
     i.bi.bi-youtube.text-red-500.text-3xl
     p.text-black.font-black.text-2xl Youtube
   .flex.flex-row
-    button.border-1
+    input(type="text", v-model="searchInfo", @click="searchInfo=''").w-300px.border.border-gray-300.rounded
+    button(@click="search()").border-1
       i.bi.bi-search.text-stone-400.py-2.px-3
     button.relative
       svg.bi.bi-coin.bg-stone-500.rounded-full.text-white(xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='currentColor' viewBox='0 0 16 16')
@@ -13,7 +14,7 @@
         path(d='M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z')
 VideoClassButton(:you-tube-video-class-buttonData='videoClass')
 div(class="md:px-2")
-  CardContent(:you-tube-data='demoData')
+  CardContent(:you-tube-data='temData')
 .flex.flex-row.justify-between.mx-10.my-2
   button.flex.flex-col(type="button")
     i.bi.bi-house.self-center
@@ -24,9 +25,9 @@ div(class="md:px-2")
   button.flex.flex-col(type="button")
     i.bi.bi-collection-play.self-center
     span Subscriptions
-  button.flex.flex-col(type="button")
+  button.flex.flex-col(type="button" @click="showFavorites()")
     i.bi.bi-collection.self-center
-    span Library
+    span Favorites
 </template>
 
 <script>
@@ -36,6 +37,8 @@ import VideoClassButton from '@/components/VideoClassButton.vue'
 export default {
   data () {
     return {
+      searchInfo: '',
+      temData: [],
       videoClass: ['全部', '遊戲', '直播中', '寶可夢', '寵物', '已觀看', '動作冒險遊戲', '烹飪', '最新上傳', '動畫', '合輯', '讓你耳目一新的影片', '運動', 'NBA'],
       demoData: [
         {
@@ -151,6 +154,27 @@ export default {
   components: {
     CardContent,
     VideoClassButton
+  },
+  methods: {
+    search () {
+      this.temData = []
+      const keyword = this.searchInfo.split(' ')
+      keyword.forEach((i) => {
+        this.demoData.forEach((item) => {
+          if (item.title.indexOf(i) !== -1 || item.subTitle.indexOf(i) !== -1) {
+            this.temData.push(item)
+            this.temData = [...new Set(this.temData)]
+          }
+        })
+      })
+    },
+    showFavorites () {
+      const favorite = JSON.parse(localStorage.getItem('favoriteList')) || []
+      this.temData = favorite
+    }
+  },
+  mounted () {
+    this.temData = this.demoData
   }
 }
 </script>

@@ -13,14 +13,28 @@ div(class="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-0 md:gap-2 md:grid-cols-
           .flex.flex-row
           span.text-xs.text-slate-500 觀看次數: {{i.views}}次．{{i.time}}前
         span
-          i.bi.bi-three-dots-vertical
+          i(@click="addFavorite(i)").bi.bi-heart
 
 </template>
 
 <script>
 export default {
-  props: ['youTubeData']
+  props: ['youTubeData'],
+  data () {
+    return {
+      favoriteList: []
+    }
+  },
+  methods: {
+    addFavorite (item) {
+      let favorite = JSON.parse(localStorage.getItem('favoriteList')) || []
+      favorite.push(item)
+      favorite = [...new Set(favorite)]
+      localStorage.setItem('favoriteList', JSON.stringify(favorite))
+    }
+  }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
