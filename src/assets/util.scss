@@ -1,0 +1,38 @@
+.lineClamp {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.customScrollBar {
+  &::-webkit-scrollbar-track
+  {
+    border-radius: 15px;
+    background-color: #F5F5F5;
+    width:10px;
+    height: 8px;
+  }
+    &::-webkit-scrollbar
+  {
+    width: 12px;
+    background-color: #F5F5F5;
+    width:10px;
+    height: 8px;
+  }
+    &::-webkit-scrollbar-thumb
+  {
+    border-radius: 15px;
+    background-color: #c2c1c1;
+    width:10px;
+    height: 8px;
+    &:hover{
+      background-color: #706e6e;
+    }
+  }
+}
+.hiddenScrollBar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
